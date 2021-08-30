@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.5;
+    }
+
+.container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* nav */
+
+.nav-container{
+    background-color: rgb(3, 75, 3);
+    /* margin-top: 17px; */
+    padding: 13px;
+    font-size: 1.1rem;
+}
+.nav-bar {
+    margin: auto;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 19%;
+}
+.main-menu a ,.nav-bar a h2{
+    color: #fff;
+}
+.nav-bar a{
+    position: relative;
+}
+.green-btn{
+    color: #fff;
+    padding: 12px 31px;
+    background:rgb(3, 75, 3);
+    border-color: white;
+    font-size: 0.91rem;
+    border-radius: .35rem;
+    margin-right: 10px;
+}
+.red-btn{
+    color: #fff;
+    padding: 12px 31px;
+    background:#be3144;
+    border-color: #be3144;
+    font-size: .91rem;
+    border-radius: .35rem;
+}
+
+/* showcase */
+
+.showcase-container{
+    background: url(img/slider-3.jpg) no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+.showcase{
+    width: 64%;
+    text-align: center;
+    margin: auto;
+    color:#fff;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+}
+.showcase-content{
+    z-index: 20;
+}
+.showcase-content input{
+        padding: 14px 26px;
+        width: 90%;
+        border: none;
+        border-radius: .8rem;
+        font-size: .95rem;
+}
+.showcase p{
+    margin: 20px;
+}
+
+.showcase::after{
+    content: '';
+    background-color:#000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+/* map */
+
+.map {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.map a{
+    color: #000;
+}
+.map i{
+    margin: 20px 10px;
+}
+/* slider */
+
+.main-box{
+    display: flex;
+    max-height: 400px;
+    width: 75%;
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: bold;
+   
+}
+.cards{
+   margin: 10px;
+}
+.arrow-prev{
+    position: absolute;
+    top: 54%;
+    left: 8%;
+}
+.arrow-next{
+    position: absolute;
+    top:54%;
+    right:8%;
+}
+.container-slide{
+    margin-bottom: 50px;
+    position: relative;
+}
+.arrow-prev i:hover,.arrow-next i:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.container-slide h1{
+    text-align: center;
+    margin-top: 40px;
+}
+.image{
+    overflow: hidden;
+    border: 5px solid #000;
+
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* about */
+
+.about-container{
+    background: url(img/about.jpg) no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+    height: 23rem;
+}
+.about{
+    width: 76%;
+    margin: auto;
+    color:#fff;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+}
+.about-content{
+    z-index: 20;
+}
+.about p{
+    margin-bottom: 15px ;
+}
+.about h2{
+    margin-top: 50px;
+}
+.about-btn{
+    padding: 10px 23px;
+    border: none;
+    background: rgb(3, 209, 3);
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: .35rem;
+}
+.about::after{
+    content: '';
+    background-color:#000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+/* subs  */
+
+.subscribe{
+    margin-top: 50px;
+    height: 22rem;
+    background: url(img/subs.jpg) no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+.upper-content{
+    width: 76%;
+    margin: auto;
+    color:#fff;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+}
+.subs-content p{
+    margin: 10px 0 20px 0;
+    
+}
+.subs-content{
+  z-index: 20;
+  font-size: 1.1rem;
+}
+.upper-content::after{
+    content: '';
+    background-color:rgb(127, 218, 127);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+.subs-content input{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 19px;
+    width: 67%;
+    background: none;
+    border: none;
+    margin-right: -11px;
+    border-bottom: 2px solid #fff;
+}
+.subs-content label{
+    padding: 14px 29px;
+}
+.ipt::placeholder { 
+    color: #fff;  
+}
+
+/* contact */
+.contact-btn{
+    padding: 10px 20px;
+    border: none;
+    background: rgb(3, 209, 3);
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: .35rem;
+}
+.contact-content{
+    background: rgb(127, 218, 127);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 0.51rem;
+}
+.contact-wrapper h1{
+    margin-bottom: 20px;
+}
+.contact-wrapper{
+    margin-top: 50px;
+    text-align: center;
+}
+#phone-no ,#email-contact{
+    width: 87%;
+    padding: 12px 30px;
+    border-radius: 0.51rem;   
+}
+.contact-content input{
+   margin: 10px 0;
+   border: 1px solid rgb(90, 90, 90);
+
+}
+#first-name , #last-name{
+    width: 43%;
+    padding: 12px 30px;
+    border-radius: 0.51rem; 
+}
+#message{
+    border-radius: 0.51rem; 
+    width: 87%;
+    padding: 12px 30px;
+}
+.contact-wrapper form{
+    padding: 35px 0;
+}
+
+/* footer */
+.footer-container{
+    margin-top: 30px;
+    background-color: rgb(3, 75, 3);
+    font-size: 0.9rem;
+    
+}
+footer a{
+    color: #fff;
+}
+.footer-wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+aside{
+    
+    width: 51%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.media-wrapper a,.media-wrapper p,.media-handle{
+    color: #fff;
+}
+.media-handle{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+.media-wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
