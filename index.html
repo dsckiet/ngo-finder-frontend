@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/d2d3804d9e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>NGO Finder</title>
 </head>
 <body>
@@ -14,6 +15,7 @@
         <nav class="container nav-container">
             <div class="nav-bar">
                 <a href="#"><h2>NGO FINDER</h2></a>
+                <i class="fas fa-bars fa-2x bars"></i>
                 <ul class="main-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -102,26 +104,37 @@
                     <p>Subscribe to get all the updates about Goverment Schemes.</p>
                     <form action="#">
                         <input class="ipt" placeholder="Enter Your Email Address" id="email-subs" type="email">
-                        <label  for="email-subs" type="button" class="red-btn">SUBSCIBE</label>
+                        <label  for="email-subs" type="button" class="orange-btn">SUBSCIBE</label>
                     </form>
                 </div>
             </div>
         </section>
         
         <!-- contact -->
-           
-        <section id="contactus" class="container contact-wrapper">
-       
-            <h1>CONTACT US</h1>
-            <div class="contact-content">
-               <form action="#">
-                    <input type="text" id="first-name" placeholder="First Name">
-                    <input type="text" id="last-name" placeholder="Last Name"> <br>
-                    <input type="tel" id="phone-no" placeholder="Phone Number"><br>
-                    <input type="email" id="email-contact" placeholder="Email Address"><br>
-                    <textarea  placeholder="Message"  id="message"  rows="10"></textarea><br>
-                    <button type="submit" class="contact-btn">Submit</button>
-                </form>
+        <section class="contact-container">
+            
+            <div class="contact-heading">
+              <h1>CONTACT US</h1>
+              <hr>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <a href="#"><i class="fas fa-map-marker-alt"></i><span>Lorem ipsum dolor sit amet consectetur</span></a><br>
+                    <a href="tel:xyz"><i class="fas fa-phone-alt"></i><span>xyz</span></a><br>
+                    <a href="mailto:ngofinder@gmail.com"><i class="fas fa-envelope"></i><span>ngofinder@gmail.com</span></a>
+                </div>
+                
+                <div class="contact-content">
+                    <form action="#">
+                        <input type="text" id="first-name" placeholder="First Name">
+                        <input type="text" id="last-name" placeholder="Last Name"> <br>
+                        <input type="tel" id="phone-no" placeholder="Phone Number"><br>
+                        <input type="email" id="email-contact" placeholder="Email Address"><br>
+                        <textarea  placeholder="Message"  id="message"  rows="10"></textarea><br>
+                        <button type="submit" class="contact-btn">Submit</button>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -164,6 +177,8 @@
                 </div>
             </div>
         </section>
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -208,6 +223,6 @@
               // instead of a settings object
             ]
           });</script>
-        
+     <script src="script.js"></script>   
 </body>
 </html>
