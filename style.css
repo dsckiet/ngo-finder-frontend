@@ -35,9 +35,14 @@ li{
     padding: 13px;
     font-size: 1.1rem;
 }
-.nav-bar i{
+.menu-btn{
     display: none;
     color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top:20px;
+    right:24px;
+    z-index: 1;
 }
 .nav-bar {
     margin: auto;
@@ -77,6 +82,10 @@ li{
     border-radius: .35rem;
 }
 
+.nav-bar a.hide2{
+    z-index: -1;
+}
+
 /* showcase */
 
 .showcase-container{
@@ -97,6 +106,9 @@ li{
 }
 .showcase-content{
     z-index: 20;
+}
+.showcase-content.hide{
+    z-index: 0;
 }
 .showcase-content input{
         padding: 14px 26px;
@@ -444,15 +456,15 @@ footer a{
         width: 100%;
     }
     */
-    .main-menu{
+    /* .main-menu{
         display: none;
     }
     .right-menu{
         display: none;
-    }
-    .nav-bar i{
-        display: block;
-    }
+    } */
+   .nav-bar{
+       width: 100%;
+   }
 
 }
 
@@ -467,7 +479,62 @@ footer a{
     } */
     .footer-wrapper aside{
         display: inline-grid;
-    }   
+    }  
+   
+ 
+}
+
+@media (max-width:979px){
+    .main-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        transform:translateX(-500px);
+        border-right: #fff 1px solid;
+        opacity:0.9;
+        padding: 30px;
+        transition: 0.5s ease-in-out; 
+        z-index: 1;
+    }
+    .right-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        transform:translateX(-500px);
+        padding: 30px;
+        transition: 0.5s ease-in-out; 
+        z-index: 34;
+    }
+    .main-menu a{
+        color: #2B623D;
+    }
+    .menu-btn{
+        display: block;
+    }
+  
+    
+
+    .main-menu.show,.right-menu.showRightmenu{
+        transform:translateX(-20px);
+    }
+    .main-menu li{
+        padding: 10px;
+        border-bottom: #7ab18c solid 1px;
+        font-size: 14px;
+    }
+    .main-menu li:last-child{
+        border-bottom: 0;
+    }
+    .green-btn{
+        padding: 13px 38px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width:538px){
