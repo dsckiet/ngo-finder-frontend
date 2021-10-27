@@ -465,6 +465,24 @@ footer a{
    .nav-bar{
        width: 100%;
    }
+   .contact-heading{
+    width: 100%;
+    margin-left: 0;
+
+}
+.contact-heading h1{
+    font-size: 1.9rem;
+}
+.contact-wrapper{
+    display: block;
+    margin-top: 150px;
+}
+.contact-content{
+    margin-top: 28px;
+}
+.contact-details{
+    margin-left: 24px;
+}
 
 }
 
@@ -546,6 +564,7 @@ footer a{
         /* height: 27rem; */
         width: 90%;
     }
+
 }
 
 
@@ -556,4 +575,5 @@ footer a{
     .footer-wrapper aside{
         display: block;
     }
+   
 }
