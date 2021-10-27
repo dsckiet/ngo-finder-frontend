@@ -359,6 +359,7 @@ li{
     padding: 12px 30px;
     border:none;
     background-color: rgba(43, 98, 61, 0.2);
+    margin-top: 10px;
 }
 #message:focus {
     outline: none !important;
@@ -487,6 +488,9 @@ footer a{
 }
 
 @media (max-width:788px){
+    aside ul{
+        margin-bottom: 10px;
+    }
     
     .media-handle,.media-wrapper{
         display: block;
