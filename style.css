@@ -532,6 +532,7 @@ footer a{
         padding: 30px;
         transition: 0.5s ease-in-out; 
         z-index: 34;
+        margin-top: 10px;
     }
     .main-menu a{
         color: #2B623D;
@@ -567,6 +568,19 @@ footer a{
     .about{
         /* height: 27rem; */
         width: 90%;
+    }
+    .about-container{
+        font-size: 0.9rem;
+    }
+    .subs-content{
+        font-size: 1rem;
+    }
+    .subs-content input{
+        font-size: 0.9rem;
+        width: 83%;
+    }
+    .showcase-container{
+        font-size: 1rem;
     }
 
 }
